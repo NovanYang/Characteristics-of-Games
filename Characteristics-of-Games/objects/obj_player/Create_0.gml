@@ -20,3 +20,6 @@ attack_speed = 1;
 attack_damage = 1;
 player_health = 30;
 max_health = 30;
+player_level = 0;
+player_xp = 0;
+xp_to_next_level = 100;

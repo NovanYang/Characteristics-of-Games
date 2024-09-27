@@ -1,4 +1,4 @@
-show_debug_message(player_health);
+//show_debug_message(player_health);
 //player's movement
 if (keyboard_check(ord("A"))
 	|| keyboard_check(ord("D"))
@@ -82,4 +82,11 @@ if(mouse_check_button_pressed(mb_left) && attack_ready) {
 	beam.image_yscale = attack_range;
     beam.direction = angle;
 	beam.image_angle = angle;
+}
+
+//player level up 
+if (player_xp >= xp_to_next_level) {
+    player_xp -= xp_to_next_level;
+    player_level += 1;
+    xp_to_next_level *= 1.2;
 }

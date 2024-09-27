@@ -16,3 +16,4 @@ draw_rectangle(bar_x, bar_y, bar_x + bar_width, bar_y + bar_height, false);
 // Draw the current health (green color)
 draw_set_color(c_red);
 draw_rectangle(bar_x, bar_y, bar_x + (bar_width * health_percent), bar_y + bar_height, false);
+
