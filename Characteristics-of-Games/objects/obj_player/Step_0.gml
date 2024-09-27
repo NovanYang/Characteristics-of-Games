@@ -47,6 +47,10 @@ if(player_walk){
 	sprite_index = spr_player_walk;
 }
 
+if (x_velocity != 0 && y_velocity != 0) {
+	x_velocity /= sqrt(2)
+	y_velocity /= sqrt(2)
+}
 
 // update position
 x += x_velocity
