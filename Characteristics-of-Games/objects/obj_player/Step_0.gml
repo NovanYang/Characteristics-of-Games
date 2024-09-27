@@ -56,7 +56,8 @@ if (x_velocity != 0 && y_velocity != 0) {
 x += x_velocity
 y += y_velocity
 
-if(mouse_check_button_pressed(mb_left)){
+if(mouse_check_button_pressed(mb_left) && attack_ready){
 	player_attack = true;
+	attack_ready = false;
 	sprite_index = choose(spr_player_attack_1,spr_player_attack_2,spr_player_attack_3);
 }

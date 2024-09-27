@@ -9,3 +9,7 @@ y_velocity = 0.0
 player_idle = true;
 player_walk = false;
 player_attack = false;
+
+
+//player's state
+attack_ready = true;
