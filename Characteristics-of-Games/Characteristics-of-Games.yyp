@@ -38,6 +38,7 @@
   "name":"Characteristics-of-Games",
   "resources":[
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
+    {"id":{"name":"obj_player_attack_effect","path":"objects/obj_player_attack_effect/obj_player_attack_effect.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"id":{"name":"spr_player_attack_1","path":"sprites/spr_player_attack_1/spr_player_attack_1.yy",},},
@@ -46,6 +47,8 @@
     {"id":{"name":"spr_player_die","path":"sprites/spr_player_die/spr_player_die.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"spr_player_walk","path":"sprites/spr_player_walk/spr_player_walk.yy",},},
+    {"id":{"name":"spr_sword_beam_1","path":"sprites/spr_sword_beam_1/spr_sword_beam_1.yy",},},
+    {"id":{"name":"spr_sword_beam","path":"sprites/spr_sword_beam/spr_sword_beam.yy",},},
     {"id":{"name":"spr_tileset_map","path":"sprites/spr_tileset_map/spr_tileset_map.yy",},},
     {"id":{"name":"spr_tileset_player_attack_1","path":"sprites/spr_tileset_player_attack_1/spr_tileset_player_attack_1.yy",},},
     {"id":{"name":"spr_tileset_player_attack_2","path":"sprites/spr_tileset_player_attack_2/spr_tileset_player_attack_2.yy",},},

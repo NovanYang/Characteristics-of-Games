@@ -56,8 +56,29 @@ if (x_velocity != 0 && y_velocity != 0) {
 x += x_velocity
 y += y_velocity
 
-if(mouse_check_button_pressed(mb_left) && attack_ready){
-	player_attack = true;
-	attack_ready = false;
-	sprite_index = choose(spr_player_attack_1,spr_player_attack_2,spr_player_attack_3);
+if(mouse_check_button_pressed(mb_left) && attack_ready) {
+    player_attack = true;
+    attack_ready = false;
+    
+    // Choose attack sprite
+    sprite_index = choose(spr_player_attack_1, spr_player_attack_2, spr_player_attack_3);
+
+    // Calculate the direction towards the mouse
+    var angle = point_direction(x, y, mouse_x, mouse_y);
+
+    // Create the sword beam in the direction of the mouse cursor
+    var beam = instance_create_layer(x, y, "Instances", obj_player_attack_effect);
+	
+    if(mouse_x < x){
+		image_xscale = -1.0;
+	}
+	else if (mouse_x > x){
+		image_xscale = 1.0;
+	}
+	
+    // Set the direction of the sword beam to face the mouse
+	beam.image_xscale = attack_range;
+	beam.image_yscale = attack_range;
+    beam.direction = angle;
+	beam.image_angle = angle;
 }
