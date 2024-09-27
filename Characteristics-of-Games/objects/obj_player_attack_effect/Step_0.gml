@@ -14,3 +14,26 @@ if(the_player != noone) {
     x = the_player.x + lengthdir_x(offset_distance, angle);
     y = the_player.y + lengthdir_y(offset_distance, angle);
 }
+
+// Check if the sword beam hits an enemy
+if (place_meeting(x, y, obj_enemy)) {
+    // Find the nearest enemy
+    var hit_enemy = instance_nearest(x, y, obj_enemy);
+
+    // Apply the repel effect to the enemy
+    var angle_to_enemy = point_direction(x, y, hit_enemy.x, hit_enemy.y);
+
+    // Set a repel force (adjust as necessary)
+    var repel_force = 3; // Adjust to control the strength of the repel effect
+
+    // Apply the repel effect by adjusting enemy's hspeed and vspeed
+    hit_enemy.hspeed = lengthdir_x(repel_force, angle_to_enemy);
+    hit_enemy.vspeed = lengthdir_y(repel_force, angle_to_enemy);
+	hit_enemy.repeled = true;
+	if(hit_enemy.can_hit){
+		hit_enemy.enemy_health -= obj_player.attack_damage;
+	}
+	hit_enemy.can_hit = false;
+	hit_enemy.sprite_index = spr_enemy_hit;
+}
+

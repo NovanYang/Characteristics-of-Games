@@ -17,3 +17,4 @@ attack_ready = true;
 //player_stats
 attack_range = 1;
 attack_speed = 1;
+attack_damage = 1;
