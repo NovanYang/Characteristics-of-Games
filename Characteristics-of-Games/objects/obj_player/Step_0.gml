@@ -62,7 +62,7 @@ if(mouse_check_button_pressed(mb_left) && attack_ready) {
     
     // Choose attack sprite
     sprite_index = choose(spr_player_attack_1, spr_player_attack_2, spr_player_attack_3);
-
+	image_speed = attack_speed;
     // Calculate the direction towards the mouse
     var angle = point_direction(x, y, mouse_x, mouse_y);
 

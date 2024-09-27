@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Tileset_character",
-    "path":"folders/Sprites/Tileset_character.yy",
+    "name":"Player",
+    "path":"folders/Sprites/Tileset_character/Player.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
