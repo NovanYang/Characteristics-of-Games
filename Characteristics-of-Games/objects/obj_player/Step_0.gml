@@ -1,3 +1,4 @@
+show_debug_message(player_health);
 //player's movement
 if (keyboard_check(ord("A"))
 	|| keyboard_check(ord("D"))

@@ -5,6 +5,8 @@ image_yscale = 1.5;
 enemy_health = 5;
 //enemy speed
 enemy_speed = 1;
+//enemy attack
+enemy_damage = 0.1;
 
 //repel effect
 repeled = false;

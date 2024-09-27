@@ -35,3 +35,7 @@ if(enemy_health <= 0){
 }
 
 //show_debug_message(enemy_health);
+if(place_meeting(x, y, obj_player)){
+	var the_player = instance_place(x, y, obj_player);
+	the_player.player_health -= enemy_damage;
+}

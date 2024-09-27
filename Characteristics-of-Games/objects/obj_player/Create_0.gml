@@ -18,3 +18,5 @@ attack_ready = true;
 attack_range = 1;
 attack_speed = 1;
 attack_damage = 1;
+player_health = 30;
+max_health = 30;
