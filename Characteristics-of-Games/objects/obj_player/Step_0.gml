@@ -40,10 +40,10 @@ if (player_walk) {
 	player_idle = false;
 }
 
-if(player_idle){
+if(player_idle && !player_attack){
 	sprite_index = spr_player_idle;
 }
-if(player_walk){
+if(player_walk && !player_attack){
 	sprite_index = spr_player_walk;
 }
 
@@ -55,3 +55,8 @@ if (x_velocity != 0 && y_velocity != 0) {
 // update position
 x += x_velocity
 y += y_velocity
+
+if(mouse_check_button_pressed(mb_left)){
+	player_attack = true;
+	sprite_index = choose(spr_player_attack_1,spr_player_attack_2,spr_player_attack_3);
+}

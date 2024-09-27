@@ -8,3 +8,4 @@ y_velocity = 0.0
 //animation control
 player_idle = true;
 player_walk = false;
+player_attack = false;
