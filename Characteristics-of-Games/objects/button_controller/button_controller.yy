@@ -1,17 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_button",
+  "%Name":"button_controller",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_button",
+  "name":"button_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menus",
-    "path":"folders/Objects/UI_Stuff/Menus.yy",
+    "name":"Game_Controller",
+    "path":"folders/Objects/Game_Controller.yy",
   },
   "parentObjectId":null,
   "persistent":false,

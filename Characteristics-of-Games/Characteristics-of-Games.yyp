@@ -47,6 +47,7 @@
   },
   "name":"Characteristics-of-Games",
   "resources":[
+    {"id":{"name":"button_controller","path":"objects/button_controller/button_controller.yy",},},
     {"id":{"name":"EMenu","path":"objects/EMenu/EMenu.yy",},},
     {"id":{"name":"Music","path":"objects/Music/Music.yy",},},
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
