@@ -6,6 +6,12 @@ if(!global.paused){
 		|| keyboard_check(ord("W"))
 		|| keyboard_check(ord("S")))
 	{
+		var walk_sound = choose(Walking, Walking2);
+		audio_play_sound(walk_sound, 10, false);  // Play chosen sound with priority and no looping
+    
+		
+		// Set an alarm for 60 steps (1 second at 60 FPS)
+
 		if(keyboard_check(ord("A")) && (x - player_x_speed - 1 > 0)){
 			player_walk = true;
 			x_velocity = -player_x_speed;
