@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Enemy",
-    "path":"folders/Sprites/Tileset_character/Enemy.yy",
+    "path":"folders/Sprites/Tileset_map/Tileset_character/Enemy.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

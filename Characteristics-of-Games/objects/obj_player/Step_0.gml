@@ -61,6 +61,10 @@ if(!global.paused){
 	if(mouse_check_button_pressed(mb_left) && attack_ready) {
 		player_attack = true;
 		attack_ready = false;
+		
+		// Choose and play a random attack sound effect
+		var attack_sound = choose(SwordSwing, SwordSwing2);
+		audio_play_sound(attack_sound, 10, false);  // Play chosen sound with priority and no looping
     
 		// Choose attack sprite
 		sprite_index = choose(spr_player_attack_1, spr_player_attack_2, spr_player_attack_3);

@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"Music",
+  "%Name":"SMenu",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Music",
+  "name":"SMenu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Music",
-    "path":"folders/Objects/Music.yy",
+    "name":"UI_Stuff",
+    "path":"folders/Objects/UI_Stuff.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"StartMenu",
+    "path":"sprites/StartMenu/StartMenu.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

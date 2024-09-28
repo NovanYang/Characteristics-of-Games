@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Player",
-    "path":"folders/Sprites/Tileset_character/Player.yy",
+    "path":"folders/Sprites/Tileset_map/Tileset_character/Player.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

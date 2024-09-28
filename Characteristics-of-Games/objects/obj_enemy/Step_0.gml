@@ -51,6 +51,9 @@ if(!global.paused){
 		obj_enemy_generator.current_enemies -= 1;
 		instance_destroy(id);
 		obj_player.player_xp += xp_drop;
+		
+		audio_play_sound(EnemyKilled, 10, false);
+		
 	}
 
 	//show_debug_message(enemy_health);
