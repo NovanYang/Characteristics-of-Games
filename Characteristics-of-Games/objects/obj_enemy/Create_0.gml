@@ -9,6 +9,8 @@ enemy_health = 2;
 enemy_speed = 1;
 //enemy attack
 enemy_damage = 0.1;
+//enemy XP
+xp_drop = 20;
 
 //repel effect
 repeled = false;

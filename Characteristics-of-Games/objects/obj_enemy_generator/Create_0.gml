@@ -9,6 +9,7 @@ base_health = 2;
 base_damage = 0.1;
 growth_timer = 0;
 growth_duration = 600;
+xp_drop = 20;
 
 // Keep track of current enemy stats
 current_health = base_health;
