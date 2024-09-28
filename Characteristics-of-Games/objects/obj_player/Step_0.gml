@@ -95,6 +95,10 @@ if(!global.paused){
 		player_level += 1;
 		xp_to_next_level *= 1.2;
 		
+		var upgrade_sound = choose(Upgrade, Upgrade2, Upgrade3, Upgrade4, Upgrade5, Upgrade6);
+		audio_play_sound(upgrade_sound, 10, false);  // Play chosen sound with priority and no looping
+    
+		
 		
 		var button1 = instance_create_layer(x - 100, y - 50, "Instances", obj_button);
 	    button1.button_text = "Max HP"; // Set text for button 1
