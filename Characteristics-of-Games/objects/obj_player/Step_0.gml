@@ -94,5 +94,24 @@ if(!global.paused){
 		player_xp -= xp_to_next_level;
 		player_level += 1;
 		xp_to_next_level *= 1.2;
+		
+		
+		var button1 = instance_create_layer(x - 100, y - 50, "Instances", obj_button);
+	    button1.button_text = "Increase Max Health"; // Set text for button 1
+	    button1.button_action = "Increase Max Health"; // Set action for button 1
+
+	    var button2 = instance_create_layer(x - 200, y - 50, "Instances", obj_button);
+	    button2.button_text = "Increase Attack Damage"; // Set text for button 2
+	    button2.button_action = "Increase Attack Damage"; // Set action for button 2
+		
+		var button3 = instance_create_layer(x - 100, y - 100, "Instances", obj_button);
+	    button3.button_text = "Increase Attack Range"; // Set text for button 2
+	    button3.button_action = "Increase Attack Range"; // Set action for button 2
+		
+		var button4 = instance_create_layer(x - 200, y - 100, "Instances", obj_button);
+	    button4.button_text = "Increase Attack Speed"; // Set text for button 2
+	    button4.button_action = "Increase Attack Speed"; // Set action for button 2
+	
+	
 	}	
 }

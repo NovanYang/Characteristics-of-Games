@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"SMenu",
+  "%Name":"obj_button",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"SMenu",
+  "name":"obj_button",
   "overriddenProperties":[],
   "parent":{
     "name":"Menus",
@@ -30,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"StartMenu",
-    "path":"sprites/StartMenu/StartMenu.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
