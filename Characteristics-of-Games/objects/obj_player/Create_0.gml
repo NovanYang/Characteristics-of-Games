@@ -26,4 +26,6 @@ player_level = 1;
 player_xp = 0;
 xp_to_next_level = 50; // original is 50
 
+enemies_killed = 0;
+
 pixel_font = font_add("ThaleahFat.ttf", 24, false, false, 32, 128);

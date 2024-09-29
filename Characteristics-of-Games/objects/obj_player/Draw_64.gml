@@ -47,3 +47,12 @@ var _level_y = 45;
 draw_set_font(pixel_font)
 draw_set_color(c_ltgray)
 draw_text(_level__x, _level_y, "LVL " + string(player_level)); // Draw button text
+
+
+// draw enemies slain
+var _slain__x = 20;
+var _slain_y = 80;
+
+draw_set_font(pixel_font)
+draw_set_color(c_ltgray)
+draw_text(_slain__x, _slain_y, "Slain " + string(enemies_killed)); // Draw button text
