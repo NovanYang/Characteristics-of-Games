@@ -125,6 +125,12 @@ if(!global.paused){
 		
 		var _button_x = x - 96;
 		var _button_y = y - 100;
+	
+		// take into account the edges of the GUI
+		if (_button_x < 200 - 96) _button_x = 200 - 96;
+		else if (_button_x > 800 - 96) _button_x = 800 -96;
+		if (_button_y < 150 - 96) _button_y = 150 - 96;
+		else if (_button_y > 850 - 96) _button_y = 850 - 96;
 		
 		var _button1 = instance_create_layer(_button_x, _button_y, "Instances", obj_button);
 	    _button1.button_text = _upgrade_choices[_ichoice1]; // Set text for button 1
