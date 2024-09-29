@@ -10,5 +10,7 @@ hovered_color = c_gray;  // Color when hovered
 pressed_color = c_black; // Color when pressed
 is_hovered = false;      // State variable to track hover state
 
+pixel_font = font_add("ThaleahFat.ttf", 24, false, false, 32, 128);
+
 // Add this button instance to the global button list
 array_push(global.button_list, self); // Add this button instance to the list

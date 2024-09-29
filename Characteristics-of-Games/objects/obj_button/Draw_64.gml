@@ -19,8 +19,6 @@ var view_height = camera_get_view_height(view_camera[0])
 var _x = (x - cam_x) * (gui_width / view_width)
 var _y = (y - cam_y) * (gui_height / view_height)
 
-pixel_font = font_add("ThaleahFat.ttf", 24, false, false, 32, 128);
-
 draw_set_font(pixel_font)
 draw_set_color(c_dkgray)
 draw_text(_x + 50, _y + 32, button_text + " UP"); // Draw button text
