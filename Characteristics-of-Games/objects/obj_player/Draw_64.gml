@@ -63,7 +63,13 @@ var _level_y = 45;
 draw_set_color(c_ltgray);
 draw_text(_level_x, _level_y, "LVL " + string(player_level)); // Another position for the level text
 
+<<<<<<< HEAD
 // Draw the number of enemies slain
 var _slain_x = 20;
 var _slain_y = 80;
 draw_text(_slain_x, _slain_y, "Slain: " + string(enemies_killed)); // Display enemies slain
+=======
+draw_set_font(pixel_font)
+draw_set_color(c_ltgray)
+draw_text(_level__x, _level_y, "LVL " + string(player_level)); // Draw button text
+>>>>>>> parent of 41deb0e (added score for enemies slain)

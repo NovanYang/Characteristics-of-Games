@@ -52,8 +52,6 @@ if(!global.paused){
 		instance_destroy(id);
 		obj_player.player_xp += xp_drop;
 		
-		obj_player.enemies_killed++;
-		
 		audio_play_sound(EnemyKilled, 10, false);
 		
 	}
