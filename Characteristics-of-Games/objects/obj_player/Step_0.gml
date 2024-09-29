@@ -97,6 +97,8 @@ if(!global.paused){
 
 	//player level up 
 	if (player_xp >= xp_to_next_level) {
+		global.paused = true;
+		
 		player_xp -= xp_to_next_level;
 		player_level += 1;
 		xp_to_next_level *= 1.2;
@@ -104,24 +106,38 @@ if(!global.paused){
 		var upgrade_sound = choose(Upgrade, Upgrade2, Upgrade3, Upgrade4, Upgrade5, Upgrade6);
 		audio_play_sound(upgrade_sound, 10, false);  // Play chosen sound with priority and no looping
     
-		
-		
-		var button1 = instance_create_layer(x - 100, y - 50, "Instances", obj_button);
-	    button1.button_text = "Max HP"; // Set text for button 1
-	    button1.button_action = "Max HP"; // Set action for button 1
-
-	    var button2 = instance_create_layer(x - 200, y - 50, "Instances", obj_button);
-	    button2.button_text = "Attack Damage"; // Set text for button 2
-	    button2.button_action = "Attack Damage"; // Set action for button 2
-		
-		var button3 = instance_create_layer(x - 100, y - 100, "Instances", obj_button);
-	    button3.button_text = "Attack Range"; // Set text for button 3
-	    button3.button_action = "Attack Range"; // Set action for button 3
-		
-		var button4 = instance_create_layer(x - 200, y - 100, "Instances", obj_button);
-	    button4.button_text = "Attack Speed"; // Set text for button 4
-	    button4.button_action = "Attack Speed"; // Set action for button 4
 	
-	
+		// randomly select 3 upgrades to choose from
+		var _upgrade_choices = ["Max HP", "Attack Damage", "Attack Range", "Attack Speed", "Player Speed"]
+		var _length = array_length(_upgrade_choices)
+		
+		var _ichoice1 = irandom_range(0, _length - 1);
+		
+		var _ichoice2 = irandom_range(0, _length - 1);
+		while (_ichoice2 == _ichoice1) {
+			_ichoice2 = irandom_range(0, _length - 1);
+		}
+		
+		var _ichoice3 = irandom_range(0, _length - 1);
+		while (_ichoice3 == _ichoice1 || _ichoice3 == _ichoice2) {
+			_ichoice3 = irandom_range(0, _length - 1);
+		}
+		
+		var _button_x = x - 96;
+		var _button_y = y - 100;
+		
+		var _button1 = instance_create_layer(_button_x, _button_y, "Instances", obj_button);
+	    _button1.button_text = _upgrade_choices[_ichoice1]; // Set text for button 1
+	    _button1.button_action = _upgrade_choices[_ichoice1]; // Set action for button 1
+		
+		_button_y += 76
+		var _button2 = instance_create_layer(_button_x, _button_y, "Instances", obj_button);
+	    _button2.button_text = _upgrade_choices[_ichoice2]; 
+	    _button2.button_action = _upgrade_choices[_ichoice2]; 
+		
+		_button_y += 76
+		var _button3 = instance_create_layer(_button_x, _button_y, "Instances", obj_button);
+	    _button3.button_text = _upgrade_choices[_ichoice3]; 
+	    _button3.button_action = _upgrade_choices[_ichoice3]; 
 	}	
 }

@@ -22,4 +22,4 @@ player_health = 30;
 max_health = 30;
 player_level = 0;
 player_xp = 0;
-xp_to_next_level = 100;
+xp_to_next_level = 10; // orignal is 100
