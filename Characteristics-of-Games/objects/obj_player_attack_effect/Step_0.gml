@@ -32,6 +32,9 @@ if (place_meeting(x, y, obj_enemy)) {
 	hit_enemy.repeled = true;
 	if(hit_enemy.can_hit){
 		hit_enemy.enemy_health -= obj_player.attack_damage;
+		
+		// apply lifesteal
+		obj_player.player_health += obj_player.attack_damage * obj_player.life_steal;
 	}
 	hit_enemy.can_hit = false;
 	hit_enemy.sprite_index = spr_enemy_hit;

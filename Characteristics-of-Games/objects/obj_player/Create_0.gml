@@ -15,11 +15,13 @@ player_attack = false;
 attack_ready = true;
 
 //player_stats
-attack_range = 1;
-attack_speed = 1;
-attack_damage = 1;
+attack_range = 0.85;
+attack_speed = 0.5;
+attack_damage = 0.5;
+life_steal = 0.0;
+
 player_health = 30;
 max_health = 30;
 player_level = 0;
 player_xp = 0;
-xp_to_next_level = 10; // orignal is 100
+xp_to_next_level = 50; // original is 50

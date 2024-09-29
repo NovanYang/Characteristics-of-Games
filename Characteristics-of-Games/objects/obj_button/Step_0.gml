@@ -18,24 +18,45 @@ if (is_hovered) {
 		
         // Perform the action associated with the button
         switch (button_action) {
-            case "Max HP":
-				_the_player.max_health += 15;
-				_the_player.player_health += 15;
+            case "HP":
+				_the_player.max_health += 35;
+				_the_player.player_health += 35;
 				
                 break;
             case "Attack Damage":
-                // player_attack_power += 5; // Example action
-				show_message("Increase Attack Damage");
+                _the_player.attack_damage += 0.75;
+				
                 break;
             case "Attack Range":
-                // Example action
-
-				show_message("Increase Attack RANGE");
+                _the_player.attack_range += 0.18;
+				
                 break;
             case "Attack Speed":
-                // Example action
-				show_message("Increase Attack Speed");
+                _the_player.attack_speed += 0.07;
+				
                 break;
+			 case "Player Speed":
+                _the_player.player_x_speed += 0.25;
+				_the_player.player_y_speed += 0.25;
+				
+                break;
+			case "Lifesteal":
+				_the_player.life_steal += 0.07;
+				
+				break;
+			case "All Stats":
+				_the_player.player_x_speed += 0.05;
+				_the_player.player_y_speed += 0.05;
+				
+				_the_player.max_health += 10;
+				_the_player.player_health += 10;
+				
+				_the_player.attack_damage += 0.3;
+				_the_player.attack_speed += 0.03;
+				
+				_the_player.life_steal += 0.02;
+				
+				break;
         }
 		
 		// Destroy all buttons in the list

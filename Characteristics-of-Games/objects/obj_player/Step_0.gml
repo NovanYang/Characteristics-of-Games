@@ -101,14 +101,22 @@ if(!global.paused){
 		
 		player_xp -= xp_to_next_level;
 		player_level += 1;
-		xp_to_next_level *= 1.2;
+		//xp_to_next_level *= 1.2;
 		
 		var upgrade_sound = choose(Upgrade, Upgrade2, Upgrade3, Upgrade4, Upgrade5, Upgrade6);
 		audio_play_sound(upgrade_sound, 10, false);  // Play chosen sound with priority and no looping
     
 	
 		// randomly select 3 upgrades to choose from
-		var _upgrade_choices = ["Max HP", "Attack Damage", "Attack Range", "Attack Speed", "Player Speed"]
+		var _upgrade_choices = [
+			"HP", 
+			"Attack Damage", 
+			"Attack Range", 
+			"Attack Speed", 
+			"Player Speed",
+			"Lifesteal",
+			"All Stats"
+		]
 		var _length = array_length(_upgrade_choices)
 		
 		var _ichoice1 = irandom_range(0, _length - 1);
@@ -146,4 +154,8 @@ if(!global.paused){
 	    _button3.button_text = _upgrade_choices[_ichoice3]; 
 	    _button3.button_action = _upgrade_choices[_ichoice3]; 
 	}	
+}
+
+if (player_health > max_health) {
+	player_health = max_health
 }
