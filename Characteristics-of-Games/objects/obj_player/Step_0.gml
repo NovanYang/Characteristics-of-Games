@@ -101,7 +101,7 @@ if(!global.paused){
 		
 		player_xp -= xp_to_next_level;
 		player_level += 1;
-		//xp_to_next_level *= 1.2;
+		xp_to_next_level *= 1.2;
 		
 		var upgrade_sound = choose(Upgrade, Upgrade2, Upgrade3, Upgrade4, Upgrade5, Upgrade6);
 		audio_play_sound(upgrade_sound, 10, false);  // Play chosen sound with priority and no looping
@@ -140,17 +140,17 @@ if(!global.paused){
 		if (_button_y < 150 - 96) _button_y = 150 - 96;
 		else if (_button_y > 850 - 96) _button_y = 850 - 96;
 		
-		var _button1 = instance_create_layer(_button_x, _button_y, "Instances", obj_button);
+		var _button1 = instance_create_layer(_button_x, _button_y, "UI_Instances", obj_button);
 	    _button1.button_text = _upgrade_choices[_ichoice1]; // Set text for button 1
 	    _button1.button_action = _upgrade_choices[_ichoice1]; // Set action for button 1
 		
 		_button_y += 76
-		var _button2 = instance_create_layer(_button_x, _button_y, "Instances", obj_button);
+		var _button2 = instance_create_layer(_button_x, _button_y, "UI_Instances", obj_button);
 	    _button2.button_text = _upgrade_choices[_ichoice2]; 
 	    _button2.button_action = _upgrade_choices[_ichoice2]; 
 		
 		_button_y += 76
-		var _button3 = instance_create_layer(_button_x, _button_y, "Instances", obj_button);
+		var _button3 = instance_create_layer(_button_x, _button_y, "UI_Instances", obj_button);
 	    _button3.button_text = _upgrade_choices[_ichoice3]; 
 	    _button3.button_action = _upgrade_choices[_ichoice3]; 
 	}	
