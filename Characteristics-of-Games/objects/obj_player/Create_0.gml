@@ -20,6 +20,7 @@ attack_speed = 0.5;
 attack_damage = 0.5;
 life_steal = 0.0;
 
+player_lives = 3;
 player_health = 30;
 max_health = 30;
 player_level = 0;
