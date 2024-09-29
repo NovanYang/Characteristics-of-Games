@@ -98,6 +98,9 @@ if(!global.paused){
 	//player level up 
 	if (player_xp >= xp_to_next_level) {
 		global.paused = true;
+		sprite_index = spr_player_idle;
+		player_attack = false;
+		attack_ready = true; 
 		
 		player_xp -= xp_to_next_level;
 		player_level += 1;
