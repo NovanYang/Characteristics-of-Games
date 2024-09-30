@@ -163,5 +163,6 @@ if (player_health > max_health) {
 	player_health = max_health
 }
 else if (player_health < 0) {
+	audio_play_sound(GameOver, 10, false);
 	room_goto(endMenu)
 }

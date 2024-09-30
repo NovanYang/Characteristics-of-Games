@@ -68,6 +68,7 @@
     {"id":{"name":"BGM","path":"sounds/BGM/BGM.yy",},},
     {"id":{"name":"Button","path":"sounds/Button/Button.yy",},},
     {"id":{"name":"EnemyKilled","path":"sounds/EnemyKilled/EnemyKilled.yy",},},
+    {"id":{"name":"GameOver","path":"sounds/GameOver/GameOver.yy",},},
     {"id":{"name":"SwordSwing","path":"sounds/SwordSwing/SwordSwing.yy",},},
     {"id":{"name":"SwordSwing2","path":"sounds/SwordSwing2/SwordSwing2.yy",},},
     {"id":{"name":"Upgrade","path":"sounds/Upgrade/Upgrade.yy",},},
