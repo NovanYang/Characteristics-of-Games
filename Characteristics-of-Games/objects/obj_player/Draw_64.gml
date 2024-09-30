@@ -59,7 +59,7 @@ draw_rectangle(xp_bar_x - 1, xp_bar_y - 1, xp_bar_x + xp_bar_width + 1, xp_bar_y
 var _level__x = 570;
 var _level_y = 50;
 
-draw_set_font(pixel_font)
+draw_set_font(fnt_pixel)
 draw_set_color(c_ltgray)
 draw_text(_level__x, _level_y, "LVL " + string(player_level)); // Draw button text
 
@@ -68,6 +68,6 @@ draw_text(_level__x, _level_y, "LVL " + string(player_level)); // Draw button te
 var _slain__x = 20;
 var _slain_y = 80;
 
-draw_set_font(pixel_font)
+draw_set_font(fnt_pixel)
 draw_set_color(c_ltgray)
 draw_text(_slain__x, _slain_y, "Slain " + string(enemies_killed)); // Draw button text
