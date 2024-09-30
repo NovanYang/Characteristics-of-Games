@@ -51,6 +51,7 @@
   "resources":[
     {"id":{"name":"fnt_pixel","path":"fonts/fnt_pixel/fnt_pixel.yy",},},
     {"id":{"name":"button_controller","path":"objects/button_controller/button_controller.yy",},},
+    {"id":{"name":"Die","path":"objects/Die/Die.yy",},},
     {"id":{"name":"EMenu","path":"objects/EMenu/EMenu.yy",},},
     {"id":{"name":"Music","path":"objects/Music/Music.yy",},},
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
@@ -86,6 +87,7 @@
     {"id":{"name":"spr_button_hover","path":"sprites/spr_button_hover/spr_button_hover.yy",},},
     {"id":{"name":"spr_button_pressed","path":"sprites/spr_button_pressed/spr_button_pressed.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
+    {"id":{"name":"spr_died","path":"sprites/spr_died/spr_died.yy",},},
     {"id":{"name":"spr_enemy_hit","path":"sprites/spr_enemy_hit/spr_enemy_hit.yy",},},
     {"id":{"name":"spr_enemy_idle","path":"sprites/spr_enemy_idle/spr_enemy_idle.yy",},},
     {"id":{"name":"spr_enemy_killed","path":"sprites/spr_enemy_killed/spr_enemy_killed.yy",},},
