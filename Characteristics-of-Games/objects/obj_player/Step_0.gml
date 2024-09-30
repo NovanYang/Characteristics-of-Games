@@ -162,3 +162,6 @@ if(!global.paused){
 if (player_health > max_health) {
 	player_health = max_health
 }
+else if (player_health < 0) {
+	room_goto(endMenu)
+}

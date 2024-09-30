@@ -87,6 +87,8 @@
     {"id":{"name":"spr_enemy_idle","path":"sprites/spr_enemy_idle/spr_enemy_idle.yy",},},
     {"id":{"name":"spr_enemy_killed","path":"sprites/spr_enemy_killed/spr_enemy_killed.yy",},},
     {"id":{"name":"spr_enemy_walk","path":"sprites/spr_enemy_walk/spr_enemy_walk.yy",},},
+    {"id":{"name":"spr_exp","path":"sprites/spr_exp/spr_exp.yy",},},
+    {"id":{"name":"spr_heart","path":"sprites/spr_heart/spr_heart.yy",},},
     {"id":{"name":"spr_pause_filter","path":"sprites/spr_pause_filter/spr_pause_filter.yy",},},
     {"id":{"name":"spr_player_attack_1","path":"sprites/spr_player_attack_1/spr_player_attack_1.yy",},},
     {"id":{"name":"spr_player_attack_2","path":"sprites/spr_player_attack_2/spr_player_attack_2.yy",},},
