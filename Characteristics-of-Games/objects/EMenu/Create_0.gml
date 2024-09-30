@@ -5,4 +5,4 @@ image_speed = 0;
 spr_start_button = StartMenu; 
 
 /// @description Initialize variables for menu delay
-input_delay_timer = 90;  // Delay for 90 frames (2 sec)
+input_delay_timer = 90;  // Delay for 90 frames (1.5 sec)

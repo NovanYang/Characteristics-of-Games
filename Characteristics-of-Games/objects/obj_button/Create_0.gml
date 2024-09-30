@@ -10,9 +10,8 @@ hovered_color = c_gray;  // Color when hovered
 pressed_color = c_black; // Color when pressed
 is_hovered = false;      // State variable to track hover state
 
-// Initialize variables for button
-timer_initialized = false;  // Set timer_initialized to false initially
-hover_timer = 0;  // Initialize the hover timer
+action_allowed = false;
+input_delay_timer = 60; // delay for 60 frames to prevent instant clicking
 
 pixel_font = font_add("ThaleahFat.ttf", 24, false, false, 32, 128);
 

@@ -1,9 +1,3 @@
-// Define a variable for the delay timer
-if (!timer_initialized) {
-    hover_timer = 0;  // Initialize the hover timer
-    timer_initialized = true;
-}
-
 // Convert mouse position to GUI coordinates for accurate hover detection
 var mouse_gui_x = device_mouse_x_to_gui(0); // 0 means "use the first mouse device"
 var mouse_gui_y = device_mouse_y_to_gui(0);
@@ -18,15 +12,10 @@ is_hovered = (
 
 var _the_player = instance_nearest(x, y, obj_player);
 
-// If the button is hovered, start the timer
-if (is_hovered) {
-    hover_timer += 1;  // Increment timer while the button is hovered
-} else {
-    hover_timer = 0;  // Reset the timer if not hovered
+if (input_delay_timer > 0) {
+	input_delay_timer--;
 }
-
-// Check if 1 second (30 frames assuming 30 fps) has passed while hovering
-if (hover_timer >= 30) {
+else {
     if (mouse_check_button_pressed(mb_left)) {
         sprite_index = spr_button_pressed;
         
