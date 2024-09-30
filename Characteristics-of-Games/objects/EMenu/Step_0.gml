@@ -23,5 +23,6 @@ if image_index = 1 and accept{
 }
 
 if image_index = 0 and accept{
+	audio_play_sound(Button, 10, false);
 	room_goto(rm_main);
 }

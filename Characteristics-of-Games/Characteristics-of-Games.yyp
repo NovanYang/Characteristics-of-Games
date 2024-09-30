@@ -66,6 +66,7 @@
     {"id":{"name":"startMenu","path":"rooms/startMenu/startMenu.yy",},},
     {"id":{"name":"global_variables","path":"scripts/global_variables/global_variables.yy",},},
     {"id":{"name":"BGM","path":"sounds/BGM/BGM.yy",},},
+    {"id":{"name":"Button","path":"sounds/Button/Button.yy",},},
     {"id":{"name":"EnemyKilled","path":"sounds/EnemyKilled/EnemyKilled.yy",},},
     {"id":{"name":"SwordSwing","path":"sounds/SwordSwing/SwordSwing.yy",},},
     {"id":{"name":"SwordSwing2","path":"sounds/SwordSwing2/SwordSwing2.yy",},},
