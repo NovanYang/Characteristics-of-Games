@@ -8,7 +8,7 @@ if (input_delay_timer > 0) {
     // Input checks for movement and button presses once delay is over
     up     = keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(0, gp_padu);
     down   = keyboard_check_pressed(vk_down) || gamepad_button_check_pressed(0, gp_padd);
-    accept = mouse_check_button_pressed(mb_left) || keyboard_check_pressed(ord("F")) || gamepad_button_check_pressed(0, gp_face1);
+    accept = mouse_check_button_pressed(mb_left) || keyboard_check_pressed(ord("F")) || gamepad_button_check_pressed(0, gp_face1) || keyboard_check_pressed(vk_space);
     back   = keyboard_check_pressed(ord("D")) || gamepad_button_check_pressed(0, gp_face2);
 
     // Check for movement (up and down) if the timer has finished

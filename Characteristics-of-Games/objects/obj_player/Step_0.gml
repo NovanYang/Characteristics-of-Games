@@ -64,7 +64,7 @@ if(!global.paused){
 	x += x_velocity
 	y += y_velocity
 
-	if(mouse_check_button_pressed(mb_left) && attack_ready) {
+	if((mouse_check_button_pressed(mb_left) || keyboard_check(vk_space)) && attack_ready) {
 		player_attack = true;
 		attack_ready = false;
 		

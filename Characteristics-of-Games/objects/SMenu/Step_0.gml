@@ -4,7 +4,7 @@ var up, down, accept, back;
 
 up 	   = keyboard_check_pressed(vk_up ) or gamepad_button_check_pressed(0, gp_padu);
 down   = keyboard_check_pressed(vk_down) or gamepad_button_check_pressed(0, gp_padd);
-accept = mouse_check_button_pressed(mb_left)or keyboard_check_pressed(ord("F")) or gamepad_button_check_pressed(0, gp_face1);
+accept = mouse_check_button_pressed(mb_left)or keyboard_check_pressed(ord("F")) or gamepad_button_check_pressed(0, gp_face1) or keyboard_check_pressed(vk_space);
 back   = keyboard_check_pressed(ord("D")) or gamepad_button_check_pressed(0, gp_face2);
 
 if up and image_index >0{
